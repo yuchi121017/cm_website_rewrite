@@ -212,7 +212,7 @@ a:hover {
 }
 
 .dropdown-menu ul{
-	font-size: 2rem;
+	font-size: 20px !important;
 }
 
 /* 模組間距 */
@@ -794,4 +794,6 @@ ul.topnav {
 	height: 80px;
 }
 
-/* 123123 */
+/* .dropdown-menu ul{
+	font-size: 20px;
+} */
