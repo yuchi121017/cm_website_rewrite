@@ -1176,7 +1176,7 @@ ul.topnav {
     font: inherit;
     opacity: 0.5;
     border-radius: 7px;
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
 }
 
 .owl-carousel .owl-nav .owl-next,
@@ -1198,6 +1198,7 @@ ul.topnav {
 .owl-carousel .owl-nav .owl-next:hover,
 .owl-carousel .owl-nav .owl-prev:hover {
     background-color: #000;
+    /* box-shadow: 1px 1px 3px #fff; */
 }
 
 .owl-carousel .owl-nav .owl-next:after,
@@ -1212,6 +1213,11 @@ ul.topnav {
     border-width: 5px 5px 0 0;
     border-color: white;
     border-style: solid;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+    box-shadow: 3px 3px 15px #fff;
 }
 
 
