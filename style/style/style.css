@@ -1312,17 +1312,37 @@ ul.nav.nav-tabs {
 
 /*自訂各系所學程*/
 
+.col .col_02 {
+    padding-left: 10px;
+}
+
+[class*="v-i"] .d-img img {
+    margin-left: 0px;
+}
+
 .M40718 .mt {
     border-bottom: 2px solid #fff;
 }
 
-.M40718 .d-item .d-txt .mtitle {
-    margin-top: 18px;
-    padding-left: 27px;
+.M40718 .mb {
+    padding-top: 10px;
 }
 
-.M40718 .d-img img:hover {
-    box-shadow: 1px 1px 25px #fff;
+.M40718 .d-item .d-txt .mtitle {
+    margin-top: 18px;
+    /* padding-left: 27px; */
+}
+
+img.img-responsive.program_style2 {
+    opacity: 0.9;
+}
+
+.M40718 .program_style1:hover {
+    box-shadow: 1px 1px 1px #fff;
+}
+
+.M40718 .program_style2:hover {
+    opacity: 1;
 }
 
 .M40690 .d-txt .mtitle a {
