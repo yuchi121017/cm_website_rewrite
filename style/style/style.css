@@ -692,6 +692,12 @@ ul.dropdown-menu {
     background-position: left bottom
 }
 
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    font-family: sans-serif;
+}
+
 
 /* 廣告模組 資訊大圖 輪播 點擊后效果 */
 
@@ -1196,10 +1202,10 @@ ul.topnav {
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
-    background: #000;
+    /* background: #000; */
     padding: 0!important;
     font: inherit;
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 7px;
     /* border: 2px solid #fff; */
 }
@@ -1213,8 +1219,8 @@ ul.topnav {
     margin-right: 15px;
     margin-left: 15px;
     display: inline-block;
-    width: 30px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     text-indent: -9999px;
     overflow: hidden;
     transition: all .25s;
@@ -1222,7 +1228,7 @@ ul.topnav {
 
 .owl-carousel .owl-nav .owl-next:hover,
 .owl-carousel .owl-nav .owl-prev:hover {
-    background-color: #000;
+    /* background-color: #000; */
     /* box-shadow: 1px 1px 3px #fff; */
 }
 
@@ -1233,16 +1239,16 @@ ul.topnav {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 20px;
-    height: 20px;
-    border-width: 5px 5px 0 0;
+    width: 30px;
+    height: 30px;
+    border-width: 10px 10px 0 0;
     border-color: white;
     border-style: solid;
 }
 
 .owl-carousel .owl-nav button.owl-next:hover,
 .owl-carousel .owl-nav button.owl-prev:hover {
-    box-shadow: 3px 3px 15px #fff;
+    /* box-shadow: 3px 3px 15px #fff; */
 }
 
 
@@ -1388,9 +1394,13 @@ ul.nav.nav-tabs {
     /* padding-left: 27px; */
 }
 
+img.img-responsive.program_style1:hover {
+    box-shadow: 1px 1px 2px #fff;
+}
+
 .M40718 .program_style1:hover {
-    /* box-shadow: 1px 1px 1px #fffefedb; */
-    border: 1px solid #fff;
+    box-shadow: 1px 1px 2px #fff;
+    /* border: 1px solid #fff; */
 }
 
 .M40718 .program_style2_1 {
