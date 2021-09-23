@@ -946,10 +946,10 @@ textarea.form-control {
         padding: 0;
     }
     /*頁首 邊框*/
-    .mnavbar .navbar-nav>li {
+    /* .mnavbar .navbar-nav>li {
         float: none;
         border-left: 1px solid rgba(0, 0, 0, .1);
-    }
+    } */
     /*頁首連結 內邊距*/
     .mnavbar .navbar-nav>li>a {
         padding: 1em;
@@ -1589,5 +1589,19 @@ button.chinese:hover {
     }
     .dropdown-menu>li>a {
         color: #fff;
+    }
+}
+
+@media (min-width: 1400px) {
+    .mnavbar .navbar-nav>li {
+        float: none;
+        border-left: 1px solid rgba(0, 0, 0, .1);
+    }
+}
+
+@media (max-width: 1399px) {
+    .mnavbar .navbar-nav>li {
+        float: left;
+        border-left: 1px solid rgba(0, 0, 0, .1);
     }
 }
