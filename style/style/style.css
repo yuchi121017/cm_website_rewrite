@@ -172,6 +172,7 @@ a:hover {
 
 .footer a {
     color: #ffffff;
+    font-size: 15px;
 }
 
 
@@ -531,13 +532,13 @@ ul.dropdown-menu {
     text-decoration: none;
     margin-top: 10px;
     padding-top: 5px;
-    color: #0b3c5d;
-    background: #fff;
-    border-style: none;
+    color: #fff;
+    background: #0b3c5d;
 }
 
 .M40684 .more a:hover {
-    border: 1px solid #0b3c5d;
+    background-color: #fff;
+    color: #0b3c5d;
 }
 
 
@@ -1449,6 +1450,7 @@ img.img-responsive.program_style1:hover {
     padding-bottom: 20px;
     padding-top: 20px;
     font-size: 24px;
+    text-align: center;
 }
 
 .M40718 .d-txt .mtitle {
@@ -1513,4 +1515,79 @@ img.img-responsive.program_style1:hover {
 ul.langbar {
     display: none !important;
     /*拿掉語言列*/
+}
+
+
+/* 語言按鍵 */
+
+button.english,
+button.chinese {
+    border: 1px solid #0b3c5d;
+    color: #fff;
+    background: #0b3c5d;
+}
+
+button.english:hover,
+button.chinese:hover {
+    border: 1px solid #0b3c5d;
+    color: #0b3c5d;
+    background: #fff;
+}
+
+
+/* navbar下拉選單修改  很有可能會爆炸 爆炸刪這段 */
+
+@media (min-width: 1024px) {
+    .dropdown-menu {
+        min-width: 245px;
+    }
+}
+
+
+/* RWD */
+
+@media (max-width: 992px) {
+    .col-sm-3 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-sm-3 {
+        width: 100%;
+    }
+    .hdmenu {
+        margin-top: 30px;
+    }
+    .english,
+    .chinese {
+        display: none;
+    }
+}
+
+
+/* 10等分版 */
+
+@media (max-width:1980px) {
+    .col-sm-3-1 {
+        width: 20%;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-sm-3-1 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-sm-3 {
+        width: 100%;
+    }
+    .navbar-toggle+.navbar-collapse .navbar-toggle {
+        display: block;
+    }
+    .dropdown-menu>li>a {
+        color: #fff;
+    }
 }
