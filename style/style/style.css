@@ -1603,3 +1603,14 @@ button.chinese:hover {
         border-left: 1px solid rgba(0, 0, 0, .1);
     }
 }
+
+
+/* 教師獎補助 */
+
+.mpgdetail table {
+    max-width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    border-collapse: collapse;
+    border: none;
+}
