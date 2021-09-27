@@ -627,7 +627,7 @@ ul.dropdown-menu {
 /* 資訊明細 大圖 說明 */
 
 .figBS figcaption {
-    font-size: .75em;
+    font-size: 25px;
     line-height: 1.5em;
     text-align: left;
     padding-left: 20px;
@@ -966,7 +966,7 @@ textarea.form-control {
     }
     /* 明細頁面 大圖說明 */
     .figBS figcaption {
-        font-size: 2rem;
+        font-size: 25px;
         line-height: 2em;
     }
 }
@@ -1176,6 +1176,21 @@ ul.topnav {
 
 /* banner滿版 */
 
+
+/* 去掉大圖的白邊邊 */
+
+.row_0>.mrow:not(.container) .col_02 #Dyn_2_1 .module-ads.md_style99 .mthide+.mb,
+.row_0>.mrow:not(.container) .col_02 #Dyn_2_1 .module-adv.md_style99 .mthide+.mb {
+    margin-left: -15px;
+    margin-right: -15px;
+    /* margin: auto; */
+}
+
+.row.col1.row_0 .mcol {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .mcarousel.owl-carousel .owl-item img,
 .listBS.owl-carousel .owl-item img {
     width: 100% !important;
@@ -1382,7 +1397,8 @@ ul.nav.nav-tabs {
     margin-left: 0px;
 }
 
-.M40718 .mt {
+.M40718 .mt,
+.M40761 .mt {
     border-bottom: 2px solid #fff;
 }
 
@@ -1447,8 +1463,8 @@ img.img-responsive.program_style1:hover {
 .M40718 .program_text {
     margin: 0 auto;
     width: 157px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
     font-size: 24px;
     text-align: center;
 }
