@@ -289,6 +289,12 @@ a:hover {
     /* 連結區域左側內部留白 */
     padding-right: 10px;
     /* 連結區域右側內部留白 */
+    font-size: 25px;
+}
+
+.navbar-nav>li>a {
+    line-height: 30px;
+    font-size: 25px;
 }
 
 
@@ -318,6 +324,11 @@ a:hover {
 .dropdown-menu>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.navbar-nav .open .dropdown-menu>li>a {
+    line-height: 30px;
 }
 
 
@@ -952,7 +963,7 @@ textarea.form-control {
     } */
     /*頁首連結 內邊距*/
     .mnavbar .navbar-nav>li>a {
-        padding: 1em;
+        padding: 14px;
         margin: 0;
         text-align: center;
         white-space: nowrap;
@@ -1144,6 +1155,8 @@ ul.topnav {
     margin-bottom: 0;
     padding: 0;
     border: 0px;
+    /* background-color: #fff; */
+    min-height: 0px;
 }
 
 .mnavbar {
@@ -1647,10 +1660,20 @@ button.chinese:hover {
     border-left: 1px solid rgba(0, 0, 0, .1);
 }
 
-@media (min-width:768px) and (max-width: 1400px) {
+@media (min-width:768px) and (max-width: 1520px) {
     .mnavbar .navbar-nav>li {
         float: left;
         border-left: 1px solid rgba(0, 0, 0, .1);
+    }
+    .navbar-toggle+.navbar-collapse .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    button.english,
+    button.chinese {
+        display: none;
     }
 }
 
