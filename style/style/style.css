@@ -1552,7 +1552,7 @@ button.chinese:hover {
 }
 
 
-/* navbar下拉選單修改  很有可能會爆炸 爆炸刪這段 */
+/* navbar下拉選單樣式  */
 
 @media (min-width: 1024px) {
     /*navbar下拉選單寬度調整*/
@@ -1663,13 +1663,19 @@ button.navbar-toggle.open {
 }
 
 .navbar-toggle span:after,
-.navbar-toggle span:before {
+.navbar-toggle span:before,
+.navbar-toggle:hover {
     background: #fff;
 }
 
 .navbar-toggle {
     background-color: #0b3c5d;
     top: 17px;
+}
+
+.navbar-toggle span:hover::before,
+.navbar-toggle span:hover::after {
+    background: #0b3c5d;
 }
 
 
