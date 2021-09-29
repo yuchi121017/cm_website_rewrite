@@ -1334,6 +1334,7 @@ a:focus {
     border-color: #0b3c5d;
     border-radius: 0;
     border-radius: 0 !important;
+    border: 1px solid #0b3c5d;
 }
 
 .M40684 .nav-tabs>li>a:hover,
@@ -1554,6 +1555,7 @@ button.chinese:hover {
 /* navbar下拉選單修改  很有可能會爆炸 爆炸刪這段 */
 
 @media (min-width: 1024px) {
+    /*navbar下拉選單寬度調整*/
     .dropdown-menu {
         min-width: 245px;
     }
@@ -1566,17 +1568,41 @@ button.chinese:hover {
     .col-sm-3 {
         width: 50%;
     }
+    .col-sm-4 {
+        /* 焦點新聞 */
+        width: 50%;
+    }
+    .listImg div:nth-child(3) {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
     .col-sm-3 {
         width: 100%;
     }
+    .col-sm-4 {
+        /* 焦點新聞 */
+        width: 100%;
+    }
+    .listImg div:nth-child(2) {
+        display: none;
+    }
     .hdmenu {
         margin-top: 30px;
     }
     .english,
     .chinese {
+        display: none;
+    }
+}
+
+
+/* 底部連結 */
+
+@media (max-width: 768px) {
+    /*縮小時隱藏底部的一堆連結 eg.中山校園連結那些*/
+    .row.col1.row_4 {
         display: none;
     }
 }
@@ -1618,6 +1644,24 @@ button.chinese:hover {
         float: left;
         border-left: 1px solid rgba(0, 0, 0, .1);
     }
+}
+
+
+/* 選單按鈕 */
+
+button.navbar-toggle.collapsed,
+button.navbar-toggle.open {
+    top: 17px;
+}
+
+.navbar-toggle span:after,
+.navbar-toggle span:before {
+    background: #fff;
+}
+
+.navbar-toggle {
+    background-color: #0b3c5d;
+    top: 17px;
 }
 
 
