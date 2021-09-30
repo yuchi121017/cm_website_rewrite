@@ -1662,8 +1662,12 @@ button.chinese:hover {
 
 @media (min-width:768px) and (max-width: 1520px) {
     .mnavbar .navbar-nav>li {
-        float: left;
+        float: none;
+        display: block;
         border-left: 1px solid rgba(0, 0, 0, .1);
+    }
+    .mnavbar .navbar-nav>li>a {
+        text-align: left;
     }
     .navbar-toggle+.navbar-collapse .navbar-toggle {
         display: block;
