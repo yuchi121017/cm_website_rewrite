@@ -289,12 +289,12 @@ a:hover {
     /* 連結區域左側內部留白 */
     padding-right: 10px;
     /* 連結區域右側內部留白 */
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 
 .navbar-nav>li>a {
     line-height: 30px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
@@ -324,7 +324,7 @@ a:hover {
 .dropdown-menu>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .navbar-nav .open .dropdown-menu>li>a {
@@ -638,7 +638,7 @@ ul.dropdown-menu {
 /* 資訊明細 大圖 說明 */
 
 .figBS figcaption {
-    font-size: 25px;
+    font-size: 18px;
     line-height: 1.5em;
     text-align: left;
     padding-left: 20px;
@@ -1714,4 +1714,10 @@ button.navbar-toggle.open {
     word-wrap: break-word;
     border-collapse: collapse;
     border: none;
+}
+
+.wdn_responsive_table td,
+.wdn_responsive_table th {
+    padding: 15px;
+    border: 3px solid #fff;
 }
