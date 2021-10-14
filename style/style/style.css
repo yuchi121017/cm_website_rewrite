@@ -232,9 +232,9 @@ a:hover {
 /* 彈出頁首連結的小按鈕 預設樣式 */
 
 .navbar-toggle {
-    width: 40px;
-    height: 38px;
-    line-height: 1em;
+    width: 45px;
+    height: 45px;
+    line-height: 3.7em;
     border: 2px solid #0b3c5d;
     overflow: hidden;
     border-radius: 8px;
@@ -643,6 +643,7 @@ ul.dropdown-menu {
     text-align: left;
     padding-left: 20px;
     background: rgba(0, 0, 0, .65) !important;
+    position: relative;
 }
 
 
@@ -694,6 +695,10 @@ ul.dropdown-menu {
 .owl-carousel .owl-controls .owl-nav .owl-prev {
     left: 0;
     background-position: left top;
+}
+
+.owl-carousel .owl-stage-outer {
+    margin-bottom: 1.5px;
 }
 
 
@@ -1225,7 +1230,7 @@ ul.topnav {
 
 .listImg .d-txt .mtitle {
     font-size: 20px;
-    height: 70px;
+    height: 64px;
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -1268,9 +1273,9 @@ ul.topnav {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 30px;
-    height: 30px;
-    border-width: 10px 10px 0 0;
+    width: 25px;
+    height: 25px;
+    border-width: 7px 7px 0 0;
     border-color: white;
     border-style: solid;
 }
@@ -1588,6 +1593,30 @@ button.chinese:hover {
     .listImg div:nth-child(3) {
         display: none;
     }
+    .M40718 .program_title {
+        color: #0b3c5d;
+        font-size: 18px;
+        font-weight: 900;
+        padding-left: 18px;
+        padding-top: 11px;
+    }
+    .M40718 .program_text {
+        margin: 0 auto;
+        width: 157px;
+        padding-bottom: 5px;
+        padding-top: 3px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .mt {
+        font-size: 20px;
+    }
+    .listImg .d-txt .mtitle {
+        font-size: 18px;
+    }
+    .navbar-nav>li>a {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1598,7 +1627,7 @@ button.chinese:hover {
         /* 焦點新聞 */
         width: 100%;
     }
-    .listImg div:nth-child(2) {
+    .listImg div:nth-child(3) {
         display: none;
     }
     .hdmenu {
@@ -1653,7 +1682,13 @@ button.chinese:hover {
     .M40684 nav {
         background: #0b3c5d;
     }
+    .dropdown-menu>li>a {
+        font-size: 18px;
+    }
 }
+
+
+/* 10等分版end */
 
 .mnavbar .navbar-nav>li {
     float: none;
@@ -1679,6 +1714,32 @@ button.chinese:hover {
     button.chinese {
         display: none;
     }
+    .navbar-toggle {
+        display: block !important;
+    }
+    .well {
+        background-color: #fff;
+        border: none;
+        box-shadow: none;
+    }
+    .dropdown-menu>li>a {
+        font-size: 18px;
+    }
+    .figBS figcaption {
+        font-size: 20px;
+        line-height: 2em;
+    }
+}
+
+
+/* 手機RWD  */
+
+@media(max-width:500px) {
+    button.navbar-toggle.collapsed,
+    button.navbar-toggle.open,
+    .navbar-toggle {
+        top: 21px !important;
+    }
 }
 
 
@@ -1686,7 +1747,7 @@ button.chinese:hover {
 
 button.navbar-toggle.collapsed,
 button.navbar-toggle.open {
-    top: 17px;
+    top: 34px;
 }
 
 .navbar-toggle span:after,
@@ -1697,13 +1758,16 @@ button.navbar-toggle.open {
 
 .navbar-toggle {
     background-color: #0b3c5d;
-    top: 17px;
+    top: 34px;
 }
 
 .navbar-toggle span:hover::before,
 .navbar-toggle span:hover::after {
     background: #0b3c5d;
 }
+
+
+/* 個別頁面 */
 
 
 /* 教師獎補助 */
@@ -1721,3 +1785,11 @@ button.navbar-toggle.open {
     padding: 15px;
     border: 3px solid #fff;
 }
+
+td.xl65 {
+    /*管院榮譽*/
+    border: none !important;
+}
+
+
+/* 教師獎補助end */
