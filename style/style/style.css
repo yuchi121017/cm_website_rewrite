@@ -1641,6 +1641,21 @@ button.chinese:hover {
     .chinese {
         display: none;
     }
+    .M40718 .program_title {
+        color: #0b3c5d;
+        font-size: 18px;
+        font-weight: 900;
+        padding-left: 18px;
+        padding-top: 11px;
+    }
+    .M40718 .program_text {
+        margin: 0 auto;
+        width: 157px;
+        padding-bottom: 5px;
+        padding-top: 3px;
+        font-size: 18px;
+        text-align: center;
+    }
 }
 
 
@@ -1736,6 +1751,10 @@ button.chinese:hover {
     .dropdown-menu>li>a {
         font-size: 18px;
     }
+    .wrap>.minner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 
@@ -1747,14 +1766,39 @@ button.chinese:hover {
     .navbar-toggle {
         top: 21px !important;
     }
+    .M40718 .mbox1 .d-img {
+        height: 45px;
+    }
+    .M40718 .program_text {
+        position: relative;
+        bottom: 30px;
+        left: 60px;
+    }
+    .mbox1>.d-txt {
+        height: 0px;
+    }
 }
+
+
+/* temp */
+
+img#cm_icon {
+    margin-top: 17px;
+}
+
+#cm_word {
+    margin-top: 25px;
+}
+
+
+/* end temp */
 
 
 /* 選單按鈕 */
 
 button.navbar-toggle.collapsed,
 button.navbar-toggle.open {
-    top: 34px;
+    top: 57px;
 }
 
 .navbar-toggle span:after,
@@ -1765,7 +1809,7 @@ button.navbar-toggle.open {
 
 .navbar-toggle {
     background-color: #0b3c5d;
-    top: 34px;
+    top: 57px;
 }
 
 .navbar-toggle span:hover::before,
