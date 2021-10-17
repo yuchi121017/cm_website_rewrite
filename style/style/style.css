@@ -24,7 +24,7 @@
 body {
     color: #444444;
     /* 網站文字預設色碼  =>  #444444 */
-    font-size: 2rem;
+    font-size: 1.6rem;
     /* 網站文字預設字號大小 => 1.6rem 即 16px */
 }
 
@@ -165,6 +165,7 @@ a:hover {
     color: #ffffff;
     /* 頁底文字顏色 */
     min-height: 30px;
+    text-align: left;
 }
 
 
@@ -231,14 +232,56 @@ a:hover {
 
 /* 彈出頁首連結的小按鈕 預設樣式 */
 
-.navbar-toggle {
-    width: 45px;
-    height: 45px;
-    line-height: 3.7em;
-    border: 2px solid #0b3c5d;
-    overflow: hidden;
-    border-radius: 8px;
-    background: #fff;
+@media (max-width: 500px) {
+    .navbar-toggle {
+        width: 40px;
+        height: 40px;
+        line-height: 3.7em;
+        border: 2px solid #0b3c5d;
+        overflow: hidden;
+        border-radius: 4px;
+        background: #fff;
+        margin-top: 13px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 649px) {
+    .navbar-toggle {
+        width: 45px;
+        height: 45px;
+        line-height: 4.7em;
+        border: 2px solid #0b3c5d;
+        overflow: hidden;
+        border-radius: 4px;
+        background: #fff;
+        margin-top: 18px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 949px) {
+    .navbar-toggle {
+        width: 45px;
+        height: 45px;
+        line-height: 4.7em;
+        border: 2px solid #0b3c5d;
+        overflow: hidden;
+        border-radius: 4px;
+        background: #fff;
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 950px) {
+    .navbar-toggle {
+        width: 45px;
+        height: 45px;
+        line-height: 4.7em;
+        border: 2px solid #0b3c5d;
+        overflow: hidden;
+        border-radius: 4px;
+        background: #fff;
+        margin-top: 18px;
+    }
 }
 
 
@@ -527,6 +570,10 @@ ul.dropdown-menu {
     border: 1px solid #0b3c5d;
 }
 
+.M40654 a:hover {
+    text-decoration: none;
+}
+
 
 /* 資訊專區更多 */
 
@@ -638,10 +685,10 @@ ul.dropdown-menu {
 /* 資訊明細 大圖 說明 */
 
 .figBS figcaption {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5em;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 5px;
     background: rgba(0, 0, 0, .65) !important;
     position: relative;
 }
@@ -982,7 +1029,7 @@ textarea.form-control {
     }
     /* 明細頁面 大圖說明 */
     .figBS figcaption {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 2em;
     }
 }
@@ -998,21 +1045,61 @@ textarea.form-control {
     }
 }
 
+@media (min-width: 992px) and (max-width: 1096px) {
+    .listImg .d-txt .mtitle {
+        font-size: 16px;
+        height: 76px;
+    }
+}
+
+@media (min-width: 1096px) and (max-width: 1186px) {
+    .listImg .d-txt .mtitle {
+        font-size: 16px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 1186px) and (max-width: 1224px) {
+    .listImg .d-txt .mtitle {
+        font-size: 17px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 1224px) {
+    .listImg .d-txt .mtitle {
+        font-size: 18px;
+        height: 60px;
+    }
+}
+
 
 /* pad 豎屏時, 頁面顯示尺寸 481 < x <768 時,顯示效果 ↓↓↓↓  */
 
 @media (min-width: 481px) and (max-width: 768px) {
     .figBS figcaption {
-        font-size: 20px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 318px) and (max-width: 481px) {
+    .figBS figcaption {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 318px) {
+    .figBS figcaption {
+        font-size: 15px;
     }
 }
 
 
 /*
-	熒幕尺寸【大於於】768時頁面顯示效果	↓↓↓↓
+	熒幕尺寸介於300~768時頁面顯示效果	↓↓↓↓
  */
 
-@media (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
     /* 外容器間距 */
     .wrap>.minner {
         padding-left: 15px;
@@ -1053,7 +1140,11 @@ textarea.form-control {
     /* 陳列方式 > 大圖or對齊 > 圖片標題內容 > 資訊標題 */
     .listImg .d-txt .mtitle,
     .v-itd .d-txt .mtitle {
-        font-size: 2rem;
+        font-size: 16px;
+    }
+    /* 各系所學程手機螢幕大小 */
+    div#Dyn_1_2_1 {
+        padding: 0px 18px;
     }
 }
 
@@ -1121,10 +1212,10 @@ textarea.form-control {
 
 
 /*
-	熒幕尺寸【小於】480時頁面顯示效果	↓↓↓↓
+	熒幕尺寸【小於】481時頁面顯示效果	↓↓↓↓
  */
 
-@media (max-width: 480px) {
+@media (max-width: 481px) {
     /* 一欄式 資訊小圖 */
     .col1 .col_02 .d-item.col-sm-12[class*="h-t-ir-"] .d-img,
     .col1 .col_02 .d-item.col-sm-12[class*="h-ir-"] .d-img,
@@ -1137,13 +1228,16 @@ textarea.form-control {
     .navbar-fixed-top .navbar-nav>li>a {
         margin-left: 0;
     }
+    .listImg .d-txt .mtitle {
+        font-size: 15px;
+    }
 }
 
 
 /* 0907修改 */
 
 .logo {
-    margin-bottom: 38px;
+    margin-bottom: 15px;
     /*待修改*/
 }
 
@@ -1161,7 +1255,7 @@ ul.topnav {
 }
 
 .well {
-    margin-bottom: 0;
+    margin-bottom: 0px;
     padding: 0;
     border: 0px;
     /* background-color: #fff; */
@@ -1169,8 +1263,8 @@ ul.topnav {
 }
 
 .mnavbar {
-    margin-top: -30px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .mrow {
@@ -1230,11 +1324,6 @@ ul.topnav {
 .hdmenu {
     background: #0b3c5d;
     border: 1px solid #0b3c5d;
-}
-
-.listImg .d-txt .mtitle {
-    font-size: 20px;
-    height: 64px;
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -1322,8 +1411,8 @@ ul.topnav {
 }
 
 .d-txt .mtitle {
-    font-size: 2rem;
-    line-height: 1em;
+    font-size: 1.7rem;
+    line-height: 1.5em;
 }
 
 
@@ -1561,13 +1650,18 @@ ul.langbar {
 
 button.english,
 button.chinese {
+    margin-top: 40px;
     border: 1px solid #0b3c5d;
     color: #fff;
     background: #0b3c5d;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
 }
 
 button.english:hover,
 button.chinese:hover {
+    margin-top: 40px;
     border: 1px solid #0b3c5d;
     color: #0b3c5d;
     background: #fff;
@@ -1586,7 +1680,7 @@ button.chinese:hover {
 
 /* RWD */
 
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .col-sm-3 {
         width: 50%;
     }
@@ -1635,7 +1729,7 @@ button.chinese:hover {
         display: none;
     }
     .hdmenu {
-        margin-top: 30px;
+        margin-top: 0px;
     }
     .english,
     .chinese {
@@ -1714,9 +1808,16 @@ button.chinese:hover {
     border-left: 1px solid rgba(0, 0, 0, .1);
 }
 
-@media(max-width:992px) {
+@media(min-width:768px) and (max-width:992px) {
     .figBS figcaption {
         font-size: 20px;
+        line-height: 2em;
+    }
+}
+
+@media(min-width:992px) {
+    .figBS figcaption {
+        font-size: 25px;
         line-height: 2em;
     }
 }
@@ -1772,7 +1873,11 @@ button.chinese:hover {
     .M40718 .program_text {
         position: relative;
         bottom: 30px;
-        left: 60px;
+        left: 0px;
+        text-align: right;
+        margin: 0;
+        float: right;
+        padding-right: 18px;
     }
     .mbox1>.d-txt {
         height: 0px;
@@ -1783,7 +1888,7 @@ button.chinese:hover {
 /* temp */
 
 img#cm_icon {
-    margin-top: 17px;
+    margin-top: 0px;
 }
 
 #cm_word {
