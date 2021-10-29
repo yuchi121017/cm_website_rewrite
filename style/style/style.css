@@ -234,9 +234,9 @@ a:hover {
 
 @media (max-width: 500px) {
     .navbar-toggle {
-        width: 40px;
-        height: 40px;
-        line-height: 3.7em;
+        width: 35px;
+        height: 35px;
+        line-height: 2.7em;
         border: 2px solid #0b3c5d;
         overflow: hidden;
         border-radius: 4px;
@@ -245,11 +245,11 @@ a:hover {
     }
 }
 
-@media (min-width: 501px) and (max-width: 649px) {
+@media (min-width: 501px) and (max-width: 650px) {
     .navbar-toggle {
-        width: 45px;
-        height: 45px;
-        line-height: 4.7em;
+        width: 40px;
+        height: 40px;
+        line-height: 3.7em;
         border: 2px solid #0b3c5d;
         overflow: hidden;
         border-radius: 4px;
@@ -267,7 +267,7 @@ a:hover {
         overflow: hidden;
         border-radius: 4px;
         background: #fff;
-        margin-top: 0px;
+        margin-top: 18px;
     }
 }
 
@@ -363,6 +363,11 @@ a:hover {
 
 
 /* 下拉選單樣式 */
+
+
+/* .dropdown-menu {
+    left: 9px;
+} */
 
 .dropdown-menu>li>a {
     padding-top: 10px;
@@ -463,9 +468,10 @@ ul.dropdown-menu {
 
 /* 預設資訊列表 資訊間留白 */
 
-.d-item .mbox {
+
+/* .d-item .mbox {
     padding-bottom: .5em;
-}
+} */
 
 
 /* 預設資訊列表 資訊標題 */
@@ -1009,15 +1015,15 @@ textarea.form-control {
         padding: 0;
     }
     /*頁首 邊框*/
-    /* .mnavbar .navbar-nav>li {
-        float: none;
+    .mnavbar .navbar-nav>li {
+        float: left !important;
         border-left: 1px solid rgba(0, 0, 0, .1);
-    } */
+    }
     /*頁首連結 內邊距*/
     .mnavbar .navbar-nav>li>a {
         padding: 14px;
-        margin: 0;
-        text-align: center;
+        margin: 0px 0px;
+        /* text-align: center; */
         white-space: nowrap;
         /* 文字不折行 */
     }
@@ -1045,7 +1051,13 @@ textarea.form-control {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1096px) {
+.listImg .d-txt .mtitle {
+    font-size: 20px;
+    height: 64px;
+}
+
+
+/* @media (min-width: 992px) and (max-width: 1096px) {
     .listImg .d-txt .mtitle {
         font-size: 16px;
         height: 76px;
@@ -1071,7 +1083,7 @@ textarea.form-control {
         font-size: 18px;
         height: 60px;
     }
-}
+} */
 
 
 /* pad 豎屏時, 頁面顯示尺寸 481 < x <768 時,顯示效果 ↓↓↓↓  */
@@ -1140,7 +1152,7 @@ textarea.form-control {
     /* 陳列方式 > 大圖or對齊 > 圖片標題內容 > 資訊標題 */
     .listImg .d-txt .mtitle,
     .v-itd .d-txt .mtitle {
-        font-size: 16px;
+        font-size: 2rem;
     }
     /* 各系所學程手機螢幕大小 */
     div#Dyn_1_2_1 {
@@ -1229,7 +1241,7 @@ textarea.form-control {
         margin-left: 0;
     }
     .listImg .d-txt .mtitle {
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 
@@ -1237,7 +1249,7 @@ textarea.form-control {
 /* 0907修改 */
 
 .logo {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     /*待修改*/
 }
 
@@ -1566,7 +1578,7 @@ img.img-responsive.program_style1:hover {
 
 .M40718 .program_title {
     color: #0b3c5d;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 900;
     padding-left: 18px;
     padding-top: 11px;
@@ -1608,6 +1620,37 @@ img.img-responsive.program_style1:hover {
 .M40667 .mt {
     margin-top: 30px;
     padding-bottom: 5px;
+}
+
+
+/* 院長遴選專區 */
+
+.M40667 .col .col_01 {
+    float: none !important;
+    width: 100%;
+}
+
+.M40667 .module .module-cgmenu .module-menu .md_style1 {
+    display: flex;
+    width: 100%;
+}
+
+.M40667 .mt header {
+    flex: 2;
+}
+
+.M40667 .mb section {
+    flex: 10;
+}
+
+.M40667 .cgmenu.list-group {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.M40667 .row_0 .col_02 {
+    width: 100%;
 }
 
 
@@ -1710,10 +1753,13 @@ button.chinese:hover {
         font-size: 20px;
     }
     .listImg .d-txt .mtitle {
-        font-size: 18px;
+        font-size: 20px;
     }
     .navbar-nav>li>a {
-        font-size: 18px;
+        font-size: 16px !important;
+    }
+    .dropdown-toggle>a {
+        font-size: 16px !important;
     }
 }
 
@@ -1749,6 +1795,9 @@ button.chinese:hover {
         padding-top: 3px;
         font-size: 18px;
         text-align: center;
+    }
+    .mt {
+        font-size: 20px;
     }
 }
 
@@ -1796,17 +1845,18 @@ button.chinese:hover {
         background: #0b3c5d;
     }
     .dropdown-menu>li>a {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 
 /* 10等分版end */
 
-.mnavbar .navbar-nav>li {
+
+/* .mnavbar .navbar-nav>li {
     float: none;
     border-left: 1px solid rgba(0, 0, 0, .1);
-}
+} */
 
 @media(min-width:768px) and (max-width:992px) {
     .figBS figcaption {
@@ -1824,7 +1874,7 @@ button.chinese:hover {
 
 @media (min-width:768px) and (max-width: 1520px) {
     .mnavbar .navbar-nav>li {
-        float: none;
+        float: left;
         display: block;
         border-left: 1px solid rgba(0, 0, 0, .1);
     }
@@ -1882,6 +1932,15 @@ button.chinese:hover {
     .mbox1>.d-txt {
         height: 0px;
     }
+    .navbar-nav>li>a {
+        font-size: 16px;
+    }
+    .mpgtitle .hdline {
+        font-size: 2rem;
+    }
+    span.content_title {
+        font-size: 20px !important;
+    }
 }
 
 
@@ -1892,7 +1951,7 @@ img#cm_icon {
 }
 
 #cm_word {
-    margin-top: 25px;
+    margin-top: 0px;
 }
 
 
@@ -1914,7 +1973,7 @@ button.navbar-toggle.open {
 
 .navbar-toggle {
     background-color: #0b3c5d;
-    top: 57px;
+    top: 50px;
 }
 
 .navbar-toggle span:hover::before,
