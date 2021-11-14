@@ -507,8 +507,8 @@ ul.dropdown-menu {
 /* 陳列方式 > 對齊 > 標題樣式 */
 
 .d-title .d-txt .mtitle {
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 0px;
+    margin-bottom: 6px;
     padding-left: 25px;
     background: url(images/arrow.png) no-repeat 5px 8px;
     background-size: 8px 8px;
@@ -1019,7 +1019,8 @@ textarea.form-control {
     }
     /*頁首 邊框*/
     .mnavbar .navbar-nav>li {
-        float: left !important;
+        float: none;
+        text-align: center;
         border-left: 1px solid rgba(0, 0, 0, .1);
     }
     /*頁首連結 內邊距*/
@@ -1510,7 +1511,7 @@ ul.nav.nav-tabs {
 }
 
 .row.col1.row_4 .mcol {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .M40690 .mt,
@@ -1619,8 +1620,8 @@ img.img-responsive.program_style1:hover {
 }
 
 .M40690 .d-title .d-txt .mtitle {
-    margin-top: 7px;
-    margin-bottom: 7px;
+    /* margin-top: 0px; */
+    margin-bottom: 3px;
     padding-left: 0px;
     /*收起 ">" 符號*/
     /* background: url(/static/file/242/1242/mobilestyle/5306/images/arrow.png) no-repeat 5px 13px; */
@@ -1818,7 +1819,8 @@ button.chinese:hover {
     .mt {
         font-size: 20px;
     }
-    .M40667 .cgmenu.list-group {
+    .cgmenu.list-group,
+    .cgmenu.list-group {
         display: block !important;
         width: auto !important;
     }
@@ -1861,8 +1863,15 @@ button.chinese:hover {
     }
     .M40684 ul.nav.nav-tabs {
         /*管院報導系列按鈕RWD變成三個一列*/
-        width: 338px;
+        /* width: 338px; */
+        display: flex;
+        flex-wrap: wrap;
         border-bottom: 0px;
+    }
+    .nav-tabs>li {
+        float: none;
+        width: 33%;
+        text-align: center;
     }
     .M40684 nav {
         background: #0b3c5d;
@@ -2014,14 +2023,14 @@ button.navbar-toggle.open {
     max-width: 100%;
     white-space: normal;
     word-wrap: break-word;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     border: none;
 }
 
 .wdn_responsive_table td,
 .wdn_responsive_table th {
     padding: 15px;
-    border: 3px solid #fff;
+    border: 3px solid #d4d5d5;
 }
 
 td.xl65 {
@@ -2031,3 +2040,28 @@ td.xl65 {
 
 
 /* 教師獎補助end */
+
+
+/* 選單模組 */
+
+
+/* 關於管院-第三層選單*/
+
+.M40946 .cgmenu.list-group {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.cgmenu.list-group {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+
+/* 頁籤模組高度 */
+
+.M40684 .nav>li>a {
+    padding: 6px 15px;
+}
