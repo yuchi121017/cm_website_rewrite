@@ -39,6 +39,15 @@ a:hover {
     /* text-decoration: underline;  滑鼠經過連結文字時文字底部出現橫線，無需橫線可將值設成 none */
 }
 
+.mcont a {
+    text-decoration: underline;
+    color: #428bca;
+}
+
+.mcont a:hover {
+    color: #0b3c5d;
+}
+
 
 /*--◆ 頭部--*/
 
@@ -98,6 +107,10 @@ a:hover {
     float: none;
     display: inline-block;
     vertical-align: bottom;
+}
+
+.hdmenu .dropdown-menu>li>a {
+    font-weight: bolder;
 }
 
 
@@ -716,6 +729,26 @@ ul.dropdown-menu {
     text-decoration: none;
 }
 
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.list-group-item:last-child a {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.list-group-item:last-child a {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
 
 /* 廣告模組 資訊大圖 輪播 */
 
@@ -1019,9 +1052,10 @@ textarea.form-control {
     }
     /*頁首 邊框*/
     .mnavbar .navbar-nav>li {
-        float: none;
-        text-align: center;
-        border-left: 1px solid rgba(0, 0, 0, .1);
+        float: left;
+        /* text-align: center; */
+        font-weight: 600;
+        /* border-left: 1px solid rgba(0, 0, 0, .1); */
     }
     /*頁首連結 內邊距*/
     .mnavbar .navbar-nav>li>a {
@@ -1344,6 +1378,7 @@ ul.topnav {
 .hdmenu {
     background: #0b3c5d;
     border: 1px solid #0b3c5d;
+    font-weight: bold;
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -1620,7 +1655,7 @@ img.img-responsive.program_style1:hover {
 }
 
 .M40690 .d-title .d-txt .mtitle {
-    /* margin-top: 0px; */
+    margin-top: 0px;
     margin-bottom: 3px;
     padding-left: 0px;
     /*收起 ">" 符號*/
@@ -1831,7 +1866,19 @@ button.chinese:hover {
 
 @media (max-width: 768px) {
     /*縮小時隱藏底部的一堆連結 eg.中山校園連結那些*/
+    /* .row.col1.row_4 {
+        display: none;
+    } */
+    .M40690 {
+        display: none;
+    }
     .row.col1.row_4 {
+        padding-top: 15px;
+    }
+}
+
+@media(min-width: 768px) {
+    .M41061 {
         display: none;
     }
 }
@@ -1906,9 +1953,11 @@ button.chinese:hover {
 
 @media (min-width:768px) and (max-width: 960px) {
     .mnavbar .navbar-nav>li {
+        font-weight: 600;
+        margin-right: 10px;
         float: left;
         display: block;
-        border-left: 1px solid rgba(0, 0, 0, .1);
+        /* border-left: 1px solid rgba(0, 0, 0, .1); */
     }
     .mnavbar .navbar-nav>li>a {
         text-align: left;
@@ -2030,7 +2079,7 @@ button.navbar-toggle.open {
 .wdn_responsive_table td,
 .wdn_responsive_table th {
     padding: 15px;
-    border: 3px solid #d4d5d5;
+    /* border: 3px solid #d4d5d5; */
 }
 
 td.xl65 {
@@ -2064,4 +2113,25 @@ td.xl65 {
 
 .M40684 .nav>li>a {
     padding: 6px 15px;
+}
+
+
+/* 內頁樣式 */
+
+.content_title {
+    margin-bottom: 15px;
+    border-left: 4px solid #0b3c5d;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+
+/* 第三層選單響應式 */
+
+@media (max-width:769px) {
+    .btn.cgmenu-toggle {
+        display: block;
+        width: 100%;
+        border-color: transparent;
+    }
 }
